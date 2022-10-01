@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir("Curso-Microservicios/"){
-                    "sh "docker build -t microservicios ."
+                    sh "docker build -t microservicios ."
                 }
             }
         }
